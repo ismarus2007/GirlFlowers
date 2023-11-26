@@ -1,0 +1,59 @@
+body {
+    color: #ffffff;
+    background-image: url("fon.jpg");
+    background-size: 100%   ;
+}
+
+#bar {
+    border: 0px solid #000000;
+    font-size: 30px;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+    height: 80px;
+    text-align: center;
+    background-color: #B8369C;
+}
+
+#bar a {
+    margin-left: 50px;
+    color: #ffffff;
+}
+
+#bar a:hover {
+    color: #000000;
+    transition: 300ms;
+}
+
+#info {
+    border: 2px solid #000000;
+    text-align: center;
+    margin-top: 400px;
+    background-color: #000000;
+}
+
+.tovar {
+    border: 2px solid #ffffff;
+    width: 200px;
+    height: 200px;
+}
+
+#ShowTovari {
+    display: flex;
+    gap: 100px;
+    margin-left: 550px;
+}
+
+@media (max-width:740px) {
+    #ShowTovari {
+        margin-left: 2px;
+        display: block;
+    }
+    .tovar {
+        width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+}
