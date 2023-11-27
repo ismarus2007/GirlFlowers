@@ -1,18 +1,22 @@
 body {
     color: #ffffff;
     background-image: url("fon.jpg");
-    background-size: 100%   ;
+    background-size: 100%;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 #bar {
     border: 0px solid #000000;
     font-size: 30px;
-    width: 100%;
-    margin-left: -10px;
-    margin-top: -10px;
     height: 80px;
+    width: max(50%,400px);
     text-align: center;
     background-color: #B8369C;
+    width: 100vw;
 }
 
 #bar a {
@@ -26,22 +30,22 @@ body {
 }
 
 #info {
-    border: 2px solid #000000;
+    border: 0px solid #000000;
     text-align: center;
-    margin-top: 400px;
+    margin: auto;
     background-color: #000000;
+    margin-top: 300px;
 }
 
 .tovar {
     border: 2px solid #ffffff;
     width: 200px;
     height: 200px;
+    margin: auto;
 }
 
 #ShowTovari {
     display: flex;
-    gap: 100px;
-    margin-left: 550px;
 }
 
 @media (max-width:740px) {
@@ -55,5 +59,11 @@ body {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
+    }
+    #info {
+        width: 105%
+    }
+    body {
+        overflow-x: hidden;
     }
 }
