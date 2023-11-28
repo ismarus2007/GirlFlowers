@@ -1,15 +1,18 @@
 const tovar = [
     {
         name: "Пиздатая пудра",
-        stoimost: 150
+        stoimost: 150,
+        about: "Состав в названии"
     },
     {
         name: "Ахуенная тоналка",
-        stoimost: 250
+        stoimost: 250,
+        about: "Сделан из говна всех участников K-POP группы BTS"
     },
     {
-        name: "Средство для снятие лака (состав: моча чимина)",
-        stoimost: 350
+        name: "Средство для снятие лака",
+        stoimost: 350,
+        about: "состав: моча чимина"
     }
 ]
 
@@ -20,9 +23,12 @@ for (let i=0;i<tovar.length;++i) {
     'beforeend',
     `
     <div class="tovar">
-        <h3>${tovar[i].name}</h3>
-        <p>${tovar[i].stoimost} RUB</p>
-        <a href="#">Купить</a>
+        <h3 style="padding:20px;">${tovar[i].name}</h3>
+        <p style="padding:5px;">${tovar[i].about}</p>
+        <div class="buttonsTovar" style="display:flex;gap:10px;">
+            <h4>${tovar[i].stoimost} руб.</h4>
+            <h4><a href="#">Купить</a></h4>
+        </div>
     </div>
     `)
 }

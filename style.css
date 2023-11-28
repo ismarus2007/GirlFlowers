@@ -53,15 +53,19 @@ body {
 .tovar {
     border: 2px solid #ffffff;
     width: 200px;
-    height: 200px;
+    height: 220px;
 }
 
 #ShowTovari {
     display: flex;
-    gap: 50px;
+    justify-content: space-evenly;
 }
 
-@media (max-width:740px) {
+.buttonsTovar {
+    margin: 40px;
+}
+
+@media (max-width:630px) {
     #ShowTovari {
         margin-left: 2px;
         display: block;
