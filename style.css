@@ -10,12 +10,7 @@ body {
     margin: 0px;
     border: none;
   }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
+
 
 #bar {
     border: 0px solid #000000;
@@ -24,7 +19,7 @@ body {
     min-width: 350px;
     text-align: center;
     background-color: #B8369C;
-    flex-wrap: wrap;
+    flex-grow:1;
 }
 
 #bar a {
@@ -54,7 +49,8 @@ body {
     border: 2px solid #ffffff;
     width: 200px;
     height: 220px;
-}
+    border-radius: 20px;
+}    
 
 #ShowTovari {
     display: flex;
@@ -65,13 +61,13 @@ body {
     margin: 40px;
 }
 
-@media (max-width:630px) {
+@media (max-width:640px) {
     #ShowTovari {
         margin-left: 2px;
         display: block;
     }
     .tovar {
-        width: 150px;
+        width: 200px;
         height: auto;
         margin-left: auto;
         margin-right: auto;
